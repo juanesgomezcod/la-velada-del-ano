@@ -1,5 +1,5 @@
 ---
-import Notice from "../Notice.astro"
+
 import boxers from "../boxers.json"
 ---
 
@@ -8,11 +8,11 @@ import boxers from "../boxers.json"
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
-    <title>La Velada del Año - Un proyecto de Ibai Llanos</title>
+    <title>La Velada del Año - Un proyecto para aprender</title>
   </head>
 
   <body class="relative">
-    <Notice />
+    
     <header class="relative">
       <div
         class="md:absolute md:left-1/2 md:-translate-x-1/2 flex flex-col gap-1 justify-center items-center mt-4 md:mt-0 md:top-8 z-10"
@@ -74,7 +74,6 @@ import boxers from "../boxers.json"
             srcset="/boxers/coscu-mobile.webp 767w, /boxers/coscu.webp"
             sizes="(max-width: 767px) 767px, 100vw"
             alt="Coscu"
-            fetchpriority="high"
             style={boxers.coscu.clip}
           />
           <img
@@ -110,7 +109,6 @@ import boxers from "../boxers.json"
             srcset="/boxers/papigavi-mobile.webp 767w, /boxers/papigavi.webp"
             sizes="(max-width: 767px) 767px, 100vw"
             alt="Papigavi"
-            fetchpriority="low"
             style={boxers.papigavi.clip}
           />
         </div>
@@ -121,7 +119,6 @@ import boxers from "../boxers.json"
             srcset="/boxers/german-mobile.webp 767w, /boxers/german.webp"
             sizes="(max-width: 767px) 767px, 100vw"
             alt="Germán"
-            fetchpriority="high"
             style={boxers.german.clip}
           />
           <img
@@ -158,7 +155,6 @@ import boxers from "../boxers.json"
             srcset="/boxers/ampeter-mobile.webp 767w, /boxers/ampeter.webp"
             sizes="(max-width: 767px) 767px, 100vw"
             alt="Ampeter"
-            fetchpriority="low"
             style={boxers.ampeter.clip}
           />
         </div>
